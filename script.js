@@ -676,3 +676,54 @@
 
 // promises
 
+// Try Catch is used to handle sync error
+// promises are used to hamdle async errror
+
+// function myPromise(data) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (data > 100) {
+//         resolve('Data is greater than 100');
+//       } else {
+//         reject('Data  is less than 100');
+//       }
+//     }, 1000);
+//   });
+// }
+
+// // Using promise
+// myPromise(2)
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// Example of Fetch Api (predeifned Promise in JS to call data from API(AJAX))
+
+// let userApi = 'Api link';
+// fetch(userApi)
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// Async and await => use to convert async code to sync code
+
+async function getusers() {
+  try {
+    let userapi = `Api link`;
+    const response = await fetch(userapi);
+    const data = response.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+}
+getusers();
