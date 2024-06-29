@@ -251,3 +251,84 @@
 
 // console.log(str(haystack, needle));
 // console.log(str(haystack1, needle1));
+
+// async and sync
+
+// 1. Create a setTimeout that logs “Hello, World!” to the console after 3 seconds.
+// function threeseconds() {
+//   setTimeout(() => {
+//     console.log('Hello, World!');
+//   }, 3000);
+// }
+// threeseconds();
+
+// 2. Create an async function that waits for 1 second and then returns the number 100.
+
+// async function waits() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(100);
+//     }, 1000);
+//   });
+// }
+// waits()
+//   .then((data) => {
+//     console.log(data + ' ' + 'resolved data');
+//   })
+//   .catch((error) => {
+//     console.log(error + ' ERROR');
+//   });
+
+// 3. Create an async function that waits for 3 seconds and then returns an object { success: true }.
+// async function boolean() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve('success : true');
+//     }, 3000);
+//   });
+// }
+
+// boolean()
+//   .then((ResolveData) => {
+//     console.log(ResolveData + ' ' + 'Data is Resolved');
+//   })
+//   .catch((error) => {
+//     console.log(error + ' ' + 'ERROR');
+//   });
+
+// 4. Create an async function that waits for 1.5 seconds and then returns an array [1, 2, 3].
+
+// async function arr() {
+//   return new Promise((resolve, reject) => {
+//     for (let i = 0; i <= 3; i++) {
+//       setTimeout(() => {
+//         resolve(i);
+//       }, 1500);
+//     }
+//   });
+// }
+// arr()
+//   .then((arrayData) => {
+//     console.log(arrayData);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// 5. Create an async function that waits for 3.5 seconds and then returns a randomly generated number between 1 and 10.
+
+// async function randomNumber() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const Number = Math.floor(Math.random() * 10 + 1);
+//       resolve(Number);
+//     }, 3500);
+//   });
+// }
+// randomNumber()
+//   .then((Rnumber) => {
+//     console.log(Rnumber);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });

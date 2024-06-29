@@ -716,14 +716,14 @@
 
 // Async and await => use to convert async code to sync code
 
-async function getusers() {
-  try {
-    let userapi = `Api link`;
-    const response = await fetch(userapi);
-    const data = response.json();
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
-}
-getusers();
+// async function getusers() {
+//   try {
+//     let userapi = `Api link`;
+//     const response = await fetch(userapi);
+//     const data = response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// getusers();
